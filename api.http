@@ -1,0 +1,31 @@
+### Retrives all movies
+GET http://localhost:3000/movies
+
+### Retrives a movies by id
+GET http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+### Retrives all movies by a genre
+GET http://localhost:3000/movies?genre=action
+
+### Create a movie with POST
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "The good father",
+  "year": 1996,
+  "director": "Lana Wachowski",
+  "duration": 153,
+  "poster": "https://i.ytimg.com/vi/OM0tSTEQCQA/maxresdefault.jpg",
+  "genre": ["Action"],
+  "rate": 7
+}
+
+### Update a movie
+PATCH  http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+  "year": 1900
+}
+
