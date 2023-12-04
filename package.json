@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node apps.js",
-    "dev": "node --watch apps.js"
+    "start": "node app.js",
+    "dev": "node --watch app.js"
   },
   "keywords": [],
   "author": "",
